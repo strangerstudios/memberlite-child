@@ -1,0 +1,15 @@
+/*
+Theme Name: MemberLite Child Theme  
+Theme URI: http://demo.paidmembershipspro.com/memberlite-child/  
+Description: This is a sample child theme created for the MemberLite Theme.   
+Author: Kim Coleman
+Author URI: http://www.paidmembershipspro.com/  
+Template: memberlite  
+License: GPL-2.0+  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+*/
+
+h1, h2, h3, h4, h5, h6, label, .navigation, th, .pmpro_checkout thead th, #pmpro_account .pmpro_box h3, #meta-member .user, #bbpress-forums li.bbp-header,
+#bbpress-forums li.bbp-footer, #bbpress-forums fieldset.bbp-form legend {
+	font-family: 'Raleway';
+}
