@@ -15,7 +15,7 @@ add_action( 'wp_enqueue_scripts', 'memberlitechild_scripts', 20 );
 
 function memberlitechild_load_fonts()
 {
-	wp_register_style('googleFontsChild', 'http://fonts.googleapis.com/css?family=Raleway');
+	wp_register_style('googleFontsChild', '//fonts.googleapis.com/css?family=Raleway');
 	wp_enqueue_style( 'googleFontsChild');
 }
 add_action('wp_print_styles', 'memberlitechild_load_fonts');
