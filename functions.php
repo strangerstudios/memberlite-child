@@ -1,21 +1,15 @@
 <?php
 /**
- * MemberLite Child 1.0 functions and definitions
+ * Memberlite - Child Theme functions and definitions
  *
- * @package Member Lite Child 1.0
+ * @package Memberlite 2.0
+ * @subpackage Memberlite - Child Theme 1.0
  */
  
  /**
  * Enqueue scripts and styles.
  */
-function memberlitechild_scripts() {
-	wp_enqueue_style( 'memberlitechild-style', get_stylesheet_uri() );
+function memberlite_child_enqueue_styles() {
+    wp_enqueue_style( 'memberlite', get_template_directory_uri() . '/style.css' );
 }
-add_action( 'wp_enqueue_scripts', 'memberlitechild_scripts', 20 );
-
-function memberlitechild_load_fonts()
-{
-	wp_register_style('googleFontsChild', '//fonts.googleapis.com/css?family=Raleway');
-	wp_enqueue_style( 'googleFontsChild');
-}
-add_action('wp_print_styles', 'memberlitechild_load_fonts');
+add_action( 'wp_enqueue_scripts', 'memberlite_child_enqueue_styles' );
