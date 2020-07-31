@@ -2,17 +2,22 @@
 /**
  * Memberlite - Child Theme functions and definitions
  *
- * @package Memberlite 2.0
- * @subpackage Memberlite - Child Theme 1.0
+ * @package Memberlite Child
  */
  
-//Enqueue scripts and styles.
+/**
+ * Enqueue scripts and styles.
+ *
+ */
 function memberlite_child_enqueue_styles() {
     wp_enqueue_style( 'memberlite', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'memberlite_child_enqueue_styles' );
 
-//Child theme inherits parent theme settings - based on code by @greenshady from https://core.trac.wordpress.org/ticket/27177#comment:14
+/**
+ * Allow child theme to inherit parent theme settings - based on code by @greenshady from https://core.trac.wordpress.org/ticket/27177#comment:14
+ *
+ */
 function memberlite_child_switch_theme_update_mods() {
 	if ( is_child_theme() && false === get_theme_mods() ) {
 		$mods = get_option( 'theme_mods_' . get_option( 'template' ) );
